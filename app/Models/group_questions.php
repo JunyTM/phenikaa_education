@@ -11,6 +11,6 @@ class group_questions extends Model
     protected $table = "group_questions";
     protected $fillable = [
         "groupId",
-        "questionId",
+        "groupName",
     ];
 }

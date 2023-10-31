@@ -10,8 +10,8 @@ class questions extends Model
     use HasFactory;
     protected $table = "questions";
     protected $fillable = [
+        "groupId",
         "question",
-        "answerId",
         "category",
         "difficulty",
         "type",
