@@ -14,8 +14,8 @@ class users extends Model
         "email",
         "password",
         "phone",
-        "gender",
+        "country",
+        "code",
         "role",
-        "dateOfBirth",
     ];
 }

@@ -3,6 +3,9 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\usersController;
+use App\Http\Controllers\groupQuestionsController;
+use App\Http\Controllers\questionsController;
+use App\Http\Controllers\answersController;
 
 /*
 |--------------------------------------------------------------------------
