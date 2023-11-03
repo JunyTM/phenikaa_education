@@ -29,6 +29,7 @@ Route::put("/update/{id}", [usersController::class, "updateUser"])->name("user.u
 Route::delete("/delete/{id}", [usersController::class, "deleteUser"])->name("user.deleteUser");
 
 Route::get("/group", [groupQuestionsController::class, "index"])->name("group.index");
+Route::get("/group/{id}", [groupQuestionsController::class, "groupId"])->name("group.groupId");
 Route::post("/group", [groupQuestionsController::class, "store"])->name("group.store");
 Route::delete("/group/{id}", [groupQuestionsController::class, "deleteGroup"])->name("group.deleteGroup");
 
@@ -39,4 +40,5 @@ Route::delete("/question/{id}", [questionsController::class, "deleteQuestion"])-
 
 Route::get("/answer", [answersController::class, "index"])->name("answer.index");
 Route::post("/answer", [answersController::class, "store"])->name("answer.store");
+Route::get("/answer/{questionId}", [answersController::class, "getAnswer"])->name("answer.getAnswer");
 Route::delete("/answer/{id}", [answersController::class, "deleteAnswer"])->name("answer.deleteAnswer");

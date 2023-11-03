@@ -10,7 +10,6 @@ class group_questions extends Model
     use HasFactory;
     protected $table = "group_questions";
     protected $fillable = [
-        "groupId",
         "groupName",
     ];
 }

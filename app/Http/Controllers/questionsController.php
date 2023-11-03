@@ -20,9 +20,9 @@ class questionsController extends Controller
         $questions = new questions;
         $questions->groupId = $request->groupId;
         $questions->question = $request->question;
-        $questions->category = $request->category;
-        $questions->difficulty = $request->difficulty;
-        $questions->type = $request->type;
+        // $questions->category = $request->category;
+        // $questions->difficulty = $request->difficulty;
+        // $questions->type = $request->type;
         $questions->save();
         return response()->json([
             "success" => true,
@@ -35,9 +35,9 @@ class questionsController extends Controller
         $questions = questions::find($id);
         $questions->question = $request->question;
         $questions->groupId = $request->groupId;
-        $questions->category = $request->category;
-        $questions->difficulty = $request->difficulty;
-        $questions->type = $request->type;
+        // $questions->category = $request->category;
+        // $questions->difficulty = $request->difficulty;
+        // $questions->type = $request->type;
         $questions->save();
         return response()->json([
             "success" => true,

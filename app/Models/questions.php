@@ -12,8 +12,8 @@ class questions extends Model
     protected $fillable = [
         "groupId",
         "question",
-        "category",
-        "difficulty",
-        "type",
+        // "category",
+        // "difficulty",
+        // "type",
     ];
 }

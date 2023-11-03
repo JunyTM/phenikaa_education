@@ -2,12 +2,22 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\answers;
 use Illuminate\Http\Request;
 
 class answersController extends Controller
 {
     public function index() {
         $answers = answers::all();
+        return response()->json([
+            "success" => true,
+            "message" => "Get all answers is successfully",
+            "data" => $answers
+        ]);
+    }
+
+    public function getAnswer($questionId) {
+        $answers = answers::where("questionId", $questionId)->get();
         return response()->json([
             "success" => true,
             "message" => "Get all answers is successfully",
